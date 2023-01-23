@@ -57,7 +57,7 @@ console.log(typeof d)
 type check : isNaN(s) 변환하려는 값이 변환가능한 형이 아닐때, NaN의 타입체크
 
 1. 숫자(Number) 형변환 
-- number: parseInt, Number
+- number: parseInt, parseFloat, Number
 - parseInt(s): 진법계산
 - Number(s): 들어온 숫자를 그대로 형만 변환
 
