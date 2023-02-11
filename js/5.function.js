@@ -1,10 +1,37 @@
 /*
-1. 일반함수식
+1. 일반함수식 (function keyword)
 function a() {
   ...
 }
+1-1) 익명함수
+(() => {
 
-2. 변수형 함수
+})
+(function() {
+
+})
+ex) 
+// id가 id인 엘리먼트에 클릭이 일어났을때 요거(익명함수)를 실행해줘.
+$('#id').click(function() {
+  alert('click')
+})
+// id가 id인 엘리먼트에 클릭이 일어났을때 요거를 실행(익명함수)할건데 a함수를 실행해줘.
+$('#id').click(function() {
+  a();
+})
+1-2) 즉시실행 함수 
+// 함수선언
+function C() {
+  alert('HI');
+}
+// 함수호출
+C();
+// 즉시 함수 호출
+(function() {
+  alert('HI');
+})();
+
+2. 변수형 함수 
 const a = function() {
   ...
 }
@@ -22,7 +49,9 @@ function a() {
     console.log(res)
 }
 var result = a();
-console.log(result)
+console.log(result) // 2
+const result = () => c
+console.log(result) // 2
 
 함수내부에서 return을 만나는 순간 즉시 함수 종료
 
