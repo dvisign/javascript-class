@@ -21,3 +21,5 @@
 ## frontend : vercel에서 제공하는 무료 프론트서버
 
 - vue3
+
+## git-flow 협업 방식
